@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+    <style>
+        img
+        {
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p style="text-align:center"><i>Made by Krzysztof Zdąbłasz</i></p>
+    <h1>Lab 1</h1>
+    <h1>Task 2</h1>
+    <h3>Task definition:</h3>
+    <img src="lab_1_task_2.png" style='border:0px'/>
+    <h3>About my solution:</h3>
+    <p>
+        All scripts have similar structure - one main class, that slightly differs between them.
+        <br>
+        Scripts create and save series of plots to a directory that must be specified by the user.
+        <br>
+        Scripts parse data from manualy corrected CSV downloaded from The World Bank (groups filtered out,
+        some unnecessary lines deleted). 
+        <br>
+        In tasks <b>b</b> and <b>c</b>, 4 'closest countries' are 2 with higher populations and 2 with 
+        lower populations than the selected one. 
+        <br>
+        Each run of <b>b</b> and <b>c</b> should return different results, because countries 
+        and years are randomly chosen in a runtime. 
+        <br>
+        Saved images has been converted into .gif file using <i>convert -delay 15 *.png final_output.gif</i> .
+    </p>
+    <h2>a)</h2>
+    <img src='plots/a_lab_1.gif'/>
+    <h2>b)</h2>
+    <img src='plots/b_lab_1.gif'/>
+    <h2>c)</h2>
+    <img src='plots/c_lab_1.gif'/>
+    <h1>Lab 2</h1>
+    <h1>Task 1</h1>
+    <h3>Task definition:</h3>
+    <img src="lab_2_task_1.png" style='border:0px'/>
+    <h3>About my solution:</h3>
+    <p>
+        Scripts have similar structure to those from lab 1, but now matplotlib.animation is being used instead
+        of saving images to files. Important thing to mention is that those scripts might sometimes return
+        bugged plots. This is probably caused by some data-reading bug (because some countries have an incomplete population data). <br>
+        In such case, the script should be run again and it should work.
+    </p>
+    <h2>Colored</h2>
+    <h2>a)</h2>
+    <img src='plots/a_final_colored.gif'/>
+    <h2>b)</h2>
+    <img src='plots/b_final_colored.gif'/>
+    <h2>c)</h2>
+    <img src='plots/c_final_colored.gif'/>
+    <h2>B&W</h2>
+    <h2>a)</h2>
+    <img src='plots/a_final_bw.gif'/>
+    <h2>b)</h2>
+    <img src='plots/b_final_bw.gif'/>
+    <h2>c)</h2>
+    <img src='plots/c_final_bw.gif'/>
+    <h1>Task 2</h1>
+    <h3>Task definition:</h3>
+    <img src="lab_2_task_2.png" style='border:0px'/>
+    <h3>About my solution:</h3>
+    <p>
+        Again, scripts are somewhat similar to the original ones.
+        <br>
+        In the line plot, I positioned country codes to be on the right side of the lines, instead of being above them.
+        In my opinion this is a better solution, because country codes (almost) do not overlap. Unfortunately, I forgot
+        to add a legend.
+        <br>
+        Bubble plot is probably the least readable one. It lacks a legend and a proper desription (especially about countries density).
+        Country codes overlap with bubbles and it looks messy. 
+        <br>
+        I might have not understood the task correctly. 
+        Also it takes the most time to be generated.
+        <br>
+        One thing I should mention is that the x-axis is not labeled 'years' in any of those plots. However, I did that
+        on purpose as it is obvious and may be deducted by reading the main titles.
+    </p>
+    <h2>a) Line plot</h2>
+    <img src='plots/a_final_line.gif'/>
+    <h2>b) Bubble plot</h2>
+    <img src='plots/b_final_bubble.gif'/>
+    <h2>c) Pie chart</h2>
+    <img src='plots/c_final_pie.gif'/>
+    <h1>Lab 3</h1>
+    <h1>Task 3</h1>
+    <h3>Task definition:</h3>
+    <img src="lab_3_task_3.png" style='border:0px'/>
+    <h2>Breakup of Yugoslavia plot</h2>
+    <img src='plots/slowed_down.gif'/>
+    <h1>Task 4</h1>
+    <h3>Task definition:</h3>
+    <img src="lab_3_task_4.png" style='border:0px'/>
+    <h3>About my solution:</h3>
+    <p>
+        I've translated, modified and grouped data and saved them to file 'caledar_year_table.csv'.<br>
+        While working with the plot, I decided that placing labels inside the bars would make it unreadable. <br>
+        One option was to create the arrow annotations, but each one of those would have to be implicilty positioned inside the script. <br>
+        It would probably be way faster to make those annotations using Paint or any other easy graphic editor. <br>
+        I could also assign unique numbers to each event, position them on the plot, and create a table on the side of the plot, but after all I think that it would require too much work. <br> 
+        Thus, I did not make any labels at all. In my opinion, this plot would look way better using an interactive visualization.<br>
+    </p>
+    <h2>a) Colored Gannt plot</h2>
+    <img src='plots/gannt_plot_colored.png'/>
+    <h2>a) B&W Gannt plot</h2>
+    <img src='plots/gannt_plot_black_white.png'/>
+
+</body>
+</html>
