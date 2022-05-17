@@ -1,6 +1,8 @@
- Report img { border: 3px solid black; }
-
-_Made by Krzysztof Zdąbłasz_
+# Overview  
+This repository is actually a report made for "Data analysis and visualization" laboratories. It contains various animated plots, Gantt charts and scripts + data to generate them. All of them were created using Python's *matplotlib* library. In order to practise my Python skills, in the first and second lab tasks, I wrote a custom parser to read csv file instead of using *pandas* library. Some scripts may differ by only one line of code, as it was a requirement to have seperate scripts for each plot. The quality of the code was not a priority in this project. The report was converted from HTML to Markdown using an online tool and can be found below or in the *report.html* file. 
+   
+   
+   
 
 Lab 1
 =====
@@ -148,12 +150,12 @@ It would probably be way faster to make those annotations using Paint or any oth
 I could also assign unique numbers to each event, position them on the plot, and create a table on the side of the plot, but after all I think that it would require too much work.  
 Thus, I did not make any labels at all. In my opinion, this plot would look way better using an interactive visualization.  
 
-a) Colored Gannt plot
+a) Colored Gantt plot
 ---------------------
 
 ![](plots/gannt_plot_colored.png)
 
-a) B&W Gannt plot
+a) B&W Gantt plot
 -----------------
 
 ![](plots/gannt_plot_black_white.png)
